@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, ru, he">
+
+    
+
+    <title>djangorave · PyPI</title>
+    <meta name="description" content="Django integration for Flutterwave Rave Card payments and subscriptions">
+
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/warehouse-ltr.css">
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/fontawesome.css">
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/regular.css">
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/solid.css">
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/brands.css">
+    <link rel="stylesheet" href="djangorave%20%C2%B7%20PyPI_files/css.css">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.14e57721.css">
+    </noscript>
+
+    
+
+    <link rel="icon" href="https://pypi.org/static/images/favicon.6a76275d.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="https://pypi.org/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="https://pypi.org/rss/packages.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: latest releases for djangorave" href="https://pypi.org/rss/project/djangorave/releases.xml">
+    
+    <link rel="canonical" href="https://pypi.org/project/djangorave/">
+    
+
+    <meta property="og:url" content="https://pypi.org/project/djangorave/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.90915068.jpg">
+    <meta property="og:title" content="djangorave">
+    <meta property="og:description" content="Django integration for Flutterwave Rave Card payments and subscriptions">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="https://pypi.org/opensearch.xml">
+
+    
+    <script type="text/javascript" async="" src="djangorave%20%C2%B7%20PyPI_files/analytics.js"></script><script src="djangorave%20%C2%B7%20PyPI_files/raven.js" integrity="sha384-D6LXy67EIC102DTuqypxwQsTHgiatlbvg7q/1YAWFb6lRyZ1lIZ6bGDsX7jxHNKA" crossorigin="anonymous">
+    </script>
+    
+    <script async="" data-ga-id="UA-55961911-1" data-sentry-frontend-dsn="https://3a67b35c9dc248a191d761410b095861@sentry.io/1231155" src="djangorave%20%C2%B7%20PyPI_files/warehouse.js">
+    </script>
+    
+    
+    <script async="" src="djangorave%20%C2%B7%20PyPI_files/js"></script>
+    <script defer="defer" src="djangorave%20%C2%B7%20PyPI_files/insights.js"></script>
+  </head>
+
+  <body data-controller="viewport-toggle" style="padding-top: 0px;">
+    
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button type="button" class="button button--primary button--switch-to-mobile hidden" data-target="viewport-toggle.switchToMobile" data-action="viewport-toggle#switchToMobile">
+      Switch to mobile version
+    </button>
+
+    <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      
+      <noscript>
+      <div class="notification-bar notification-bar--warning" role="status">
+        
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+    </div>
+
+    
+      <div data-html-include="/_includes/flash-messages/">
+
+
+
+</div>
+    
+
+    
+
+    
+      <div data-html-include="/_includes/session-notifications/">
+
+</div>
+    
+
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="https://pypi.org/">
+                <img alt="PyPI" src="djangorave%20%C2%B7%20PyPI_files/logo-small.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/" role="search">
+              <label for="search" class="sr-only">Search PyPI</label>
+              <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" autocomplete="off" autocapitalize="off" spellcheck="false">
+              
+              <button type="submit" class="search-form__button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+          
+
+          <div data-html-include="/_includes/current-user-indicator/">
+    
+    <div id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+  <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet" aria-label="Main navigation">
+    <ul>
+      <li class="horizontal-menu__item"><a href="https://pypi.org/help/" class="horizontal-menu__link">Help</a></li>
+      <li class="horizontal-menu__item"><a href="https://pypi.org/sponsor/" class="horizontal-menu__link">Sponsor</a></li>
+      <li class="horizontal-menu__item"><a href="https://pypi.org/account/login/" class="horizontal-menu__link">Log in</a></li>
+      <li class="horizontal-menu__item"><a href="https://pypi.org/account/register/" class="horizontal-menu__link">Register</a></li>
+    </ul>
+  </nav>
+  <nav class="dropdown dropdown--on-menu hidden show-on-tablet" aria-label="Main navigation">
+    <button type="button" class="horizontal-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu" data-dropdown-bound="true">
+      Menu
+      <span class="dropdown__trigger-caret">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+    <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+      <li><a class="dropdown__link" href="https://pypi.org/help/">Help</a></li>
+      <li><a class="dropdown__link" href="https://pypi.org/sponsor/">Sponsor</a></li>
+      <li><a class="dropdown__link" href="https://pypi.org/account/login/">Log in</a></li>
+      <li><a class="dropdown__link" href="https://pypi.org/account/register/">Register</a></li>
+    </ul>
+  </nav>
+</div>
+  </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <div class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/" role="search">
+        <label for="mobile-search" class="sr-only">Search PyPI</label>
+        <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" autocomplete="off" autocapitalize="off" spellcheck="false">
+        
+        <button type="submit" class="search-form__button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+    </div>
+    
+
+    <main id="content">
+      
+<div class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        djangorave 0.1.1
+      </h1>
+
+      
+      <p class="package-header__pip-instructions">
+        <span id="pip-command">pip install djangorave</span>
+        <button type="button" class="copy-tooltip copy-tooltip-s" data-clipboard-target="#pip-command" data-tooltip-label="Copy to clipboard">
+          <i class="fa fa-copy" aria-hidden="true"></i>
+          <span class="sr-only">Copy PIP instructions</span>
+        </button>
+      </p>
+      
+    </div>
+
+    <div class="package-header__right">
+    
+      
+      <a class="status-badge status-badge--good" href="https://pypi.org/project/djangorave/">
+        <span>Latest version</span>
+      </a>
+      
+    
+      <p class="package-header__date">
+        Released: <time datetime="2019-08-17T05:12:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-17 06:12:41" aria-label="2019-08-17 06:12:41">Aug 17, 2019</time>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+    <div class="split-layout split-layout--middle package-description">
+    
+      <p class="package-description__summary">Django integration for Flutterwave Rave Card payments and subscriptions</p>
+    
+    <div data-html-include="/_includes/edit-project-button/djangorave"></div>
+    </div>
+  </div>
+</div>
+
+<div data-controller="project-tabs" data-project-tabs-content="description">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for djangorave">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab" href="#description" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+                  Project description
+                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab" href="#history" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+                  Release history
+                </a>
+              </li>
+              
+              <li role="tab">
+                <a id="files-tab" href="#files" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download files
+                </a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+        
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/bdelate/django-rave.git" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/bdelate/django-rave.git" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fab fa-github" aria-hidden="true"></i>Repository
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/bdelate/django-rave.git">
+    GitHub statistics:
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span class="github-repo-info__item" data-key="stargazers_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/network/members" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span class="github-repo-info__item" data-key="forks_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues/PRs:</strong>
+          <span class="github-repo-info__item" data-key="open_issues_count"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <p>
+    View statistics for this project via <a href="https://libraries.io/pypi/djangorave" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>
+  </p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:brendon.delate@gmail.com">Brendon Delate</a></p>
+  
+  
+    <p><strong>Maintainer:</strong> <a href="mailto:brendon.delate@gmail.com">Brendon Delate</a></p>
+  
+  
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags</span>
+    
+    <span class="package-keyword">
+      flutterwave,
+    </span>
+    
+    <span class="package-keyword">
+      rave,
+    </span>
+    
+    <span class="package-keyword">
+      django
+    </span>
+    
+  </p>
+  
+  
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.6, &lt;4
+  </p>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="https://pypi.org/user/bdelate/" aria-label="bdelate">
+        <span class="sidebar-section__user-gravatar">
+          <img src="djangorave%20%C2%B7%20PyPI_files/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176.jpg" alt="Avatar for bdelate from gravatar.com" title="Avatar for bdelate from gravatar.com" width="50" height="50">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          bdelate
+        </span>
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Classifiers</h3>
+  <ul class="sidebar-section__classifiers">
+    
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Development+Status+%3A%3A+1+-+Planning">
+            1 - Planning
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Environment</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Environment+%3A%3A+Web+Environment">
+            Web Environment
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Framework</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Framework+%3A%3A+Django">
+            Django
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Framework+%3A%3A+Django+%3A%3A+2.2">
+            Django :: 2.2
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>License</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+            OSI Approved :: MIT License
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Operating+System+%3A%3A+OS+Independent">
+            OS Independent
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+            Python :: 3.6
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+            Python :: 3.7
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries">
+            Software Development :: Libraries
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Topic+%3A%3A+Utilities">
+            Utilities
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for djangorave">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab" href="#description" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+                Project description
+              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab" href="#data" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Project details
+              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab" href="#history" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Release history. Focus will be moved to the history panel.">
+              <i class="fa fa-history" aria-hidden="true"></i>
+              Release history
+            </a>
+            </li>
+            
+            <li role="tab">
+              <a id="mobile-files-tab" href="#files" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Download files. Focus will be moved to the project files.">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Download files
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+        <div id="description" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab" tabindex="-1" style="display: block;">
+          <h2 class="page-title">Project description</h2>
+          
+          <div class="project-description">
+            <h1>Django Rave</h1>
+<h2>Project Description</h2>
+<p>This project provides Django integration for <a href="https://flutterwave.com/" rel="nofollow">Flutterwave</a> Rave Card payments and subscriptions.</p>
+<p>Current functionality:</p>
+<ul>
+<li>Allow users to make payments (once off and subscription)</li>
+<li>Create payment buttons which launch Rave payment modals</li>
+<li>Maintain a transaction history linked to users</li>
+</ul>
+<h1>Requirements</h1>
+<ul>
+<li>Python &gt;= 3.6</li>
+<li>Django &gt;= 2.0</li>
+</ul>
+<h1>Installation</h1>
+<pre>pip install djangorave
+</pre>
+<h1>Setup</h1>
+<p>Add <code>"djangorave"</code> to your <code>INSTALLED_APPS</code></p>
+<p>Run Django migrations:</p>
+<pre><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
+</pre>
+<p>Add the following to your <code>settings.py</code>:</p>
+<pre><span class="n">RAVE_PRODUCTION_PUBLIC_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_PRODUCTION_SECRET_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX_PUBLIC_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX_SECRET_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX</span> <span class="o">=</span> <span class="kc">True</span>
+</pre>
+<p>The above config will ensure <code>djangorave</code> uses your Rave sandbox. Once you are
+ready to go live, set <code>RAVE_SANDBOX = False</code></p>
+<p>Add <code>djangorave</code> to your <code>urls.py</code>:</p>
+<pre><span class="n">path</span><span class="p">(</span><span class="s2">"djangorave/"</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">"djangorave.urls"</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s2">"djangorave"</span><span class="p">))</span>
+</pre>
+<p>Add the following url as a webhook in your Rave dashboard. This will be used by
+Rave to <code>POST</code> payment transactions to your site:</p>
+<pre>http://yoursite.com/djangorave/transaction/
+</pre>
+<p><code>Note:</code> while in development, a tool like ngrok (or similar) may prove useful.</p>
+<h1>Usage</h1>
+<p><code>djangorave</code> provides two models, namely:</p>
+<ul>
+<li>The <code>PaymentTypeModel</code> allows you to create <code>once off</code> or <code>recurring</code> payment types. When creating a <code>recurring</code> payment type, ensure the <code>payment_plan</code> field
+corresponds to the Rave <code>Plan ID</code>.</li>
+<li>The <code>TransactionModel</code> creates transactions when Rave 
+POSTS to the above mentioned webhook url. This provides a history of all
+ transactions (once off or recurring), linked to the relevant <code>PaymentTypeModel</code> and <code>user</code>.</li>
+</ul>
+<p>A payment button can be created as follows:</p>
+<ol>
+<li>Create a new <code>PaymentType</code> using the django admin.</li>
+<li>In the view where you wish the button to appear, add the above created <code>PaymentType</code> to your context, eg:</li>
+</ol>
+<pre><span class="kn">from</span> <span class="nn">djangorave.models</span> <span class="kn">import</span> <span class="n">PaymentTypeModel</span>
+
+<span class="k">class</span> <span class="nc">SignUpView</span><span class="p">(</span><span class="n">TemplateView</span><span class="p">):</span>
+    <span class="sd">"""Sign Up view"""</span>
+
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s2">"my_payment_template.html"</span>
+
+    <span class="k">def</span> <span class="nf">get_context_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">"""Add payment type to context data"""</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context_data</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s2">"pro_plan"</span><span class="p">]</span> <span class="o">=</span> <span class="n">PaymentTypeModel</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+            <span class="n">description</span><span class="o">=</span><span class="s2">"Pro Plan"</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">kwargs</span>
+</pre>
+<ol>
+<li>In your template, add your button wherever you wish for it to appear as follows:</li>
+</ol>
+<pre><span class="p">{</span><span class="o">%</span> <span class="n">include</span> <span class="s1">'djangorave/pay_button.html'</span> <span class="k">with</span> <span class="n">payment_model</span><span class="o">=</span><span class="n">pro_plan</span> <span class="o">%</span><span class="p">}</span>
+</pre>
+<p><code>Note:</code> You can add multiple buttons to a single template by simply adding multiple
+plans to your context data and then including each of them with their own <code>include</code>
+tag as above.</p>
+<ol>
+<li>Add the following script to your django base template (or anywhere 
+in your template heirarchy that ensures it is loaded before your payment
+ buttons):</li>
+</ol>
+<pre><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"{% static 'djangorave/js/payment.js' %}"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre>
+<h1>Button Styling</h1>
+<p>The following css classes are available for styling your payment buttons:</p>
+<ul>
+<li><code>rave-pay-btn</code> will apply to all buttons.</li>
+<li><code>rave-subscription-btn</code> will apply to recurring payment types (ie: those with a <code>payment_plan</code>).</li>
+<li><code>rave-onceoff-btn</code> will apply to once off payment types (ie: those without a <code>payment_plan</code>).</li>
+</ul>
+<h1>Transaction Detail Page</h1>
+<p>Following a user payment, they will be redirected to the transaction detail page
+located at <code>/djangorave/&lt;str:reference&gt;/</code></p>
+<p>A default transaction detail template is already available, however if you want
+to override it, you may do so by creating a new template in your root
+templates directory, ie: <code>/templates/djangorave/transaction.html</code></p>
+<p>You will have access to <code>{{ transaction }}</code> within that template.</p>
+<h1>Development</h1>
+<p>If you wish to contribute to the project, there is an example app that demonstrates
+general usage.</p>
+<h3>Running the example:</h3>
+<pre>git clone https://github.com/bdelate/django-rave.git
+<span class="nb">cd</span> django-rave
+make build
+make migrate
+make import
+make dup
+</pre>
+<p>There is a section at the bottom of <code>django-rave/example/example/settings.py</code>. Ensure the values are set accordingly:</p>
+<pre><span class="n">RAVE_PRODUCTION_PUBLIC_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_PRODUCTION_SECRET_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX_PUBLIC_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX_SECRET_KEY</span> <span class="o">=</span> <span class="s2">"your key"</span>
+<span class="n">RAVE_SANDBOX</span> <span class="o">=</span> <span class="kc">True</span>
+</pre>
+<p>Flutterwave Rave requires payments to be associated with users who have an email address.
+Therefore, create and login with a new django user or use the existing user already
+generated following the above import command:</p>
+<pre><code>username: testuser
+password: secret
+</code></pre>
+<p>Navigate to <a href="http://localhost:8000/" rel="nofollow">http://localhost:8000/</a></p>
+
+          </div>
+          
+        </div>
+
+        
+        <div id="data" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab" tabindex="-1" style="display: none;">
+          <h2 class="page-title">Project details</h2>
+          
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/bdelate/django-rave.git" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/bdelate/django-rave.git" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fab fa-github" aria-hidden="true"></i>Repository
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/bdelate/django-rave.git">
+    GitHub statistics:
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span class="github-repo-info__item" data-key="stargazers_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/network/members" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span class="github-repo-info__item" data-key="forks_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item" data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues/PRs:</strong>
+          <span class="github-repo-info__item" data-key="open_issues_count"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <p>
+    View statistics for this project via <a href="https://libraries.io/pypi/djangorave" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>
+  </p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:brendon.delate@gmail.com">Brendon Delate</a></p>
+  
+  
+    <p><strong>Maintainer:</strong> <a href="mailto:brendon.delate@gmail.com">Brendon Delate</a></p>
+  
+  
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags</span>
+    
+    <span class="package-keyword">
+      flutterwave,
+    </span>
+    
+    <span class="package-keyword">
+      rave,
+    </span>
+    
+    <span class="package-keyword">
+      django
+    </span>
+    
+  </p>
+  
+  
+  <p>
+    <strong>Requires:</strong> Python &gt;=3.6, &lt;4
+  </p>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="https://pypi.org/user/bdelate/" aria-label="bdelate">
+        <span class="sidebar-section__user-gravatar">
+          <img src="djangorave%20%C2%B7%20PyPI_files/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176.jpg" alt="Avatar for bdelate from gravatar.com" title="Avatar for bdelate from gravatar.com" width="50" height="50">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          bdelate
+        </span>
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Classifiers</h3>
+  <ul class="sidebar-section__classifiers">
+    
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Development+Status+%3A%3A+1+-+Planning">
+            1 - Planning
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Environment</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Environment+%3A%3A+Web+Environment">
+            Web Environment
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Framework</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Framework+%3A%3A+Django">
+            Django
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Framework+%3A%3A+Django+%3A%3A+2.2">
+            Django :: 2.2
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>License</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+            OSI Approved :: MIT License
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Operating+System+%3A%3A+OS+Independent">
+            OS Independent
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+            Python :: 3.6
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+            Python :: 3.7
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries">
+            Software Development :: Libraries
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://pypi.org/search/?c=Topic+%3A%3A+Utilities">
+            Utilities
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+
+          <br>
+        </div>
+
+        
+        <div id="history" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab" tabindex="-1" style="display: none;">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <span class="reset-text margin-top">
+              <a href="https://pypi.org/help/#project-release-notifications">Release notifications</a> |
+              <a href="https://pypi.org/rss/project/djangorave/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+            </span>
+          </h2>
+
+          <div class="release-timeline">
+            
+            
+            
+            
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                
+                <span class="badge">This version</span>
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="djangorave%20%C2%B7%20PyPI_files/blue-cube.svg">
+                
+              </div>
+
+              <a class="card release__card" href="https://pypi.org/project/djangorave/0.1.1/">
+                <p class="release__version">
+                  0.1.1
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-08-17T05:12:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-17 06:12:41" aria-label="2019-08-17 06:12:41">Aug 17, 2019</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="djangorave%20%C2%B7%20PyPI_files/white-cube.svg">
+                
+              </div>
+
+              <a class="card release__card" href="https://pypi.org/project/djangorave/0.1.0/">
+                <p class="release__version">
+                  0.1.0
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-08-17T04:17:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-17 05:17:13" aria-label="2019-08-17 05:17:13">Aug 17, 2019</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="djangorave%20%C2%B7%20PyPI_files/white-cube.svg">
+                
+              </div>
+
+              <a class="card release__card" href="https://pypi.org/project/djangorave/0.0.2/">
+                <p class="release__version">
+                  0.0.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-08-01T11:30:05+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-01 12:30:05" aria-label="2019-08-01 12:30:05">Aug 1, 2019</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release release--oldest">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="djangorave%20%C2%B7%20PyPI_files/white-cube.svg">
+                
+              </div>
+
+              <a class="card release__card" href="https://pypi.org/project/djangorave/0.0.1/">
+                <p class="release__version">
+                  0.0.1
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-07-31T15:04:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-07-31 16:04:48" aria-label="2019-07-31 16:04:48">Jul 31, 2019</time>
+                </p>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+
+        
+          
+          <div id="files" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab" tabindex="-1" style="display: none;">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/installing/" title="External link" target="_blank" rel="noopener">installing packages</a>.</p>
+
+            <table class="table table--downloads">
+              <caption class="sr-only">Files for djangorave, version 0.1.1</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Filename, size</th>
+                  <th scope="col">File type</th>
+                  <th scope="col">Python version</th>
+                  <th scope="col">Upload date</th>
+                  <th scope="col" class="table__align-right">Hashes</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/d6/7d/8367a43de276569f126a33fc134a7e8dbfcb1927c4f99d2c864c695abf7d/djangorave-0.1.1-py3-none-any.whl">
+                      djangorave-0.1.1-py3-none-any.whl
+                    </a>
+                     (17.2 kB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      py3
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2019-08-17T05:12:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-17 06:12:41" aria-label="2019-08-17 06:12:41">Aug 17, 2019</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-60223b71-fc9c-4acf-a276-ce27501c7665" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/f6/8d/72903b7b91b84c3f04af95957011a6612e4139bf35cdea06c4756c377a35/djangorave-0.1.1.tar.gz">
+                      djangorave-0.1.1.tar.gz
+                    </a>
+                     (13.2 kB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Source
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      None
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2019-08-17T05:12:43+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2019-08-17 06:12:43" aria-label="2019-08-17 06:12:43">Aug 17, 2019</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-8c403e73-ac73-486d-a621-bf1c892c3ff4" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+
+          
+          <div id="copy-hash-modal-60223b71-fc9c-4acf-a276-ce27501c7665" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for djangorave-0.1.1-py3-none-any.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for djangorave-0.1.1-py3-none-any.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>7ecf1d04c0b239d0233f3569d25fa79bcd4ad69fa0f65ba43c3cdabc04dbd1f3</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="7ecf1d04c0b239d0233f3569d25fa79bcd4ad69fa0f65ba43c3cdabc04dbd1f3">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>9c0cf18c697ec8db9e3b24d9c022239e</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="9c0cf18c697ec8db9e3b24d9c022239e">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>d67d8367a43de276569f126a33fc134a7e8dbfcb1927c4f99d2c864c695abf7d</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="d67d8367a43de276569f126a33fc134a7e8dbfcb1927c4f99d2c864c695abf7d">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-8c403e73-ac73-486d-a621-bf1c892c3ff4" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for djangorave-0.1.1.tar.gz
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for djangorave-0.1.1.tar.gz</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>6aba12de967c5ac63860c60ce66ccaf55e154d4b49720af512fa81e799b3a37f</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="6aba12de967c5ac63860c60ce66ccaf55e154d4b49720af512fa81e799b3a37f">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>4108ce98b36d1c5adf29a987c117aa72</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="4108ce98b36d1c5adf29a987c117aa72">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>f68d72903b7b91b84c3f04af95957011a6612e4139bf35cdea06c4756c377a35</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="f68d72903b7b91b84c3f04af95957011a6612e4139bf35cdea06c4756c377a35">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="djangorave%20%C2%B7%20PyPI_files/white-cube.svg" alt="" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <div class="footer__menu">
+          <h2>Help</h2>
+          <nav aria-label="Help navigation">
+            <ul>
+              <li><a href="https://packaging.python.org/installing/" title="External link" target="_blank" rel="noopener">Installing packages</a></li>
+              <li><a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a></li>
+              <li><a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a></li>
+              <li><a href="https://pypi.org/help/">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>About PyPI</h2>
+          <nav aria-label="About PyPI navigation">
+            <ul>
+              <li><a href="https://twitter.com/PyPI" title="External link" target="_blank" rel="noopener">PyPI on Twitter</a></li>
+              <li><a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a></li>
+              <li><a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Package index name retention</a></li>
+              <li><a href="https://pypi.org/sponsors/">Our sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Contributing to PyPI</h2>
+          <nav aria-label="How to contribute navigation">
+            <ul>
+              <li><a href="https://pypi.org/help/#feedback">Bugs and feedback</a></li>
+              <li><a href="https://github.com/pypa/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+              <li><a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a></li>
+              <li><a href="https://github.com/pypa/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Using PyPI</h2>
+          <nav aria-label="Using PyPI navigation">
+            <ul>
+              <li><a href="https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md" title="External link" target="_blank" rel="noopener">Code of conduct</a></li>
+              <li><a href="https://pypi.org/security/">Report security issue</a></li>
+              <li><a href="https://www.python.org/privacy/" title="External link" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="https://pypi.org/policy/terms-of-use/">Terms of use</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        
+        <p>Status: <a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">
+          <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">All Systems Operational</span></a>
+        </p>
+        
+        <p>
+          Developed and maintained by the Python community, for the Python community.
+          <br>
+          <a href="https://donate.pypi.org/">Donate today!</a>
+        </p>
+        <p>© 2020 <a href="https://www.python.org/psf/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a><br>
+          <a href="https://pypi.org/sitemap/">Site map</a>
+        </p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button type="button" class="button button--switch-to-desktop" data-target="viewport-toggle.switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+          Switch to desktop version
+        </button>
+      </div>
+    </footer>
+
+
+    <div class="language-switcher">
+      <form action="/locale/">
+        <ul>
+          
+          <li>
+            <button class="language-switcher__selected" name="locale_id" value="en" type="submit">
+              English
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="es" type="submit">
+              español
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="fr" type="submit">
+              français
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="ja" type="submit">
+              日本語
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="pt_BR" type="submit">
+              português (Brasil)
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="uk" type="submit">
+              українська
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="el" type="submit">
+              Ελληνικά
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="de" type="submit">
+              Deutsch
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="zh_Hans" type="submit">
+              中文 (简体)
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="ru" type="submit">
+              русский
+            </button>
+          </li>
+          
+          <li>
+            <button name="locale_id" value="he" type="submit">
+              עברית
+            </button>
+          </li>
+          
+        </ul>
+      </form>
+    </div>
+
+
+    
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+        <img class="sponsors__image" alt="Pingdom" src="djangorave%20%C2%B7%20PyPI_files/pingdom.png">
+        <span class="sponsors__name">Pingdom</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://cloud.google.com/">
+        <img class="sponsors__image" alt="Google" src="djangorave%20%C2%B7%20PyPI_files/google.png">
+        <span class="sponsors__name">Google</span>
+        <span class="sponsors__service">Object Storage and Download Analytics</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+        <img class="sponsors__image" alt="Sentry" src="djangorave%20%C2%B7%20PyPI_files/sentry.png">
+        <span class="sponsors__name">Sentry</span>
+        <span class="sponsors__service">Error logging</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <img class="sponsors__image" alt="AWS" src="djangorave%20%C2%B7%20PyPI_files/aws.png">
+        <span class="sponsors__name">AWS</span>
+        <span class="sponsors__service">Cloud computing</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+        <img class="sponsors__image" alt="DataDog" src="djangorave%20%C2%B7%20PyPI_files/datadog.png">
+        <span class="sponsors__name">DataDog</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+        <img class="sponsors__image" alt="Fastly" src="djangorave%20%C2%B7%20PyPI_files/fastly.png">
+        <span class="sponsors__name">Fastly</span>
+        <span class="sponsors__service">CDN</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.digicert.com/">
+        <img class="sponsors__image" alt="DigiCert" src="djangorave%20%C2%B7%20PyPI_files/digicert.png">
+        <span class="sponsors__name">DigiCert</span>
+        <span class="sponsors__service">EV certificate</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io/">
+        <img class="sponsors__image" alt="StatusPage" src="djangorave%20%C2%B7%20PyPI_files/statuspage.png">
+        <span class="sponsors__name">StatusPage</span>
+        <span class="sponsors__service">Status page</span>
+      </a>
+    
+  
+</div>
+
+    
+  
+
+</body></html>

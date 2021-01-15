@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>StudyLab - Free Bootstrap 4 Template by Colorlib</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static '/css/A.animate.css%2bowl.carousel.min.css%2bowl.theme.default.min.css%2bmagnific-popup.css%2bbootstrap-datepicker.css%2bjquery.timepicker.css%2bflaticon.css%2bstyle.css%2cMcc.kvjnZeWn2e.css' %}"/>
+</head>
+<body>
+
+<!-- END nav -->
+<section class="hero-wrap hero-wrap-2" style="background-image:url('{% static 'images/bg_2.jpg.pagespeed.ce.cf1W0odbZw.jpg' %}')">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text align-items-end justify-content-center">
+<div class="col-md-9 ftco-animate pb-5 text-center">
+<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home'%}">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
+<h1 class="mb-0 bread">About Us</h1>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-about img">
+<div class="container">
+<div class="row d-flex">
+<div class="col-md-12 about-intro">
+<div class="row">
+<div class="col-md-6 d-flex">
+<div class="d-flex about-wrap">
+<div class="img d-flex align-items-center justify-content-center" style="background-image:url({% static 'images/xabout-1.jpg.pagespeed.ic.OwtMksQ53b.jpg'%})">
+</div>
+<div class="img-2 d-flex align-items-center justify-content-center" style="background-image:url({% static 'images/about.jpg.pagespeed.ce.my4z8liaBN.jpg' %})">
+</div>
+</div>
+</div>
+<div class="col-md-6 pl-md-5 py-5">
+<div class="row justify-content-start pb-3">
+<div class="col-md-12 heading-section ftco-animate">
+<span class="subheading">What you have to know about us</span>
+<h2 class="mb-4">About Olaprep </h2>
+<p>Olaprep offers a more straight forward approach to coding lessons. Students complete a short introduction and then are invited to choose between a number of programming languages that the site offers. Currently, users can choose between Java, HTML/CSS, PHP, Python, Ruby, and API. The lessons are broken down into individual components. For example, the HTML/CSS lessons start out by teaching the user how to use the proper tags to open and close an HTML document. The next step from there is learning how to use the tags to create titles, paragraphs and all the other basic components of a website. The lessons are not as colorful or entertaining as those on Code.Org so they would be better suited for high school students. They do, however, manage to deliver a large amount of information in a very short amount of time. The lessons are estimated to take between 10-12 hours to complete.</p>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+<p><a href="{% url 'contact'%}" class="btn btn-primary">Get in touch with us</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url('{% static 'images/bg_4.jpg'%}');">
+<div class="overlay"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-online"></span></div>
+<div class="text">
+<strong class="number" data-number="{{oo}}">0</strong>
+<span>Online Courses</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-graduated"></span></div>
+<div class="text">
+<strong class="number" data-number="{{ee}}">0</strong>
+<span>Students Enrolled</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-instructor"></span></div>
+<div class="text">
+<strong class="number" data-number="{{aa}}">0</strong>
+<span>Experts Instructors</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-tools"></span></div>
+<div class="text">
+<strong class="number" data-number="0">0</strong>
+<span>Hours Content</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="ftco-intro ftco-section ftco-no-pb">
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-md-12 text-center">
+<div class="img" style="background-image: url({% static 'images/bg_4.jpg'%});">
+<div class="overlay"></div>
+<h2>We Are OlaPrep An Online Learning Center</h2>
+<p>We can manage your dream and make them come true</p>
+<p class="mb-0"><a href="{% url 'registercourse'%}" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="ftco-footer ftco-no-pt">
+<div class="container mt-5">
+<div class="row mb-5">
+<div class="col-md pt-5">
+<div class="ftco-footer-widget pt-md-5 mb-4">
+<h2 class="ftco-heading-2">About</h2>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+<li class="animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+<li class="animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+<li class="animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md pt-5">
+<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+<h2 class="ftco-heading-2">Help Desk</h2>
+<ul class="list-unstyled">
+<li class="py-2 d-block " style="color: white;">Customer Care</li>
+<li class="py-2 d-block " style="color: white;">Legal Help</li>
+<li class="py-2 d-block " style="color: white;">Services</li>
+<li class="py-2 d-block " style="color: white;">Privacy and Policy</li>
+<li class="py-2 d-block " style="color: white;">Refund Policy</li>
+<li class="py-2 d-block " style="color: white;">Call Us</li>
+</ul>
+</div>
+</div>
+<div class="col-md pt-5">
+<div class="ftco-footer-widget pt-md-5 mb-4">
+<h2 class="ftco-heading-2">Recent Courses</h2>
+<ul class="list-unstyled">
+	{% for obj in programs %}
+<li class="py-2 d-block " style="color: white;">{{obj.program}}</li>
+	{% endfor %}
+
+</ul>
+</div>
+</div>
+<div class="col-md pt-5">
+<div class="ftco-footer-widget pt-md-5 mb-4">
+<h2 class="ftco-heading-2">Have a Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><span class="icon fa fa-map-marker"></span><span class="text">No Illechukwu Street , New GRA, Enugu Nigeria</span></li>
+<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+234 708 542 751</span></a></li>
+<li><a href="{% url 'contact'%}"><span class="icon fa fa-paper-plane"></span><span class="text">olaprep@gmail.com</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<script src="{% static '/js/jquery.min.js.pagespeed.jm.xZH2zNe7lE.js' %}"></script>
+<script src="{% static '/js/jquery-migrate-3.0.1.min.js%2bpopper.min.js%2bbootstrap.min.js.pagespeed.jc.erZkhhbLI0.js' %}"></script><script>eval(mod_pagespeed_2RG6nigRym);</script>
+<script>eval(mod_pagespeed_2Q$AIxptJ1);</script>
+<script>eval(mod_pagespeed_U6$WzY$9Ti);</script>
+<script src="{% static '/js/jquery.easing.1.3.js%2bjquery.waypoints.min.js%2bjquery.stellar.min.js%2bowl.carousel.min.js.pagespeed.jc.Ssjbe0x5Ik.js' %}"></script><script>eval(mod_pagespeed_ytlwXAatuZ);</script>
+<script>eval(mod_pagespeed_ZRRMJUgrRe);</script>
+<script>eval(mod_pagespeed_BoKWE_g8RP);</script>
+<script>eval(mod_pagespeed_BBI8$G5zE3);</script>
+<script src="{% static '/js/jquery.magnific-popup.min.js%2bjquery.animateNumber.min.js%2bbootstrap-datepicker.js%2bscrollax.min.js%2bgoogle-map.js%2bmain.js.pagespeed.jc.T607vrhnGx.js' %}"></script><script>eval(mod_pagespeed_CcXD5T6stf);</script>
+<script>eval(mod_pagespeed__daDZx_CLv);</script>
+<script>eval(mod_pagespeed_5Ynut4vbtl);</script>
+<script>eval(mod_pagespeed_vjETjsVCO$);</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script>eval(mod_pagespeed_SeO09j3m4K);</script>
+<script>eval(mod_pagespeed_ICRlmQwWHo);</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-23581568-13');</script>
+</body>
+</html>
+
+{% endblock %}

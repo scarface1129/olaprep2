@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="{% url 'home'%}"><span>Ola</span>Prep</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav ">
+			{% url 'home' as home %}
+			{% url 'about' as about %}
+			{% url 'contacts' as contacts %}
+			{% url 'tutors' as tutors %}
+			{% url 'subjects' as subjects %}
+			{% url 'home' as home %}
+			<li {% if request.path == home %} class="active mt-3" {%endif%} class="nav-item"><a href="{% url 'home'%}" class="nav-link">Home</a></li>
+			<li {% if request.path == about %} class="active" {%endif%} class="nav-item"><a href="{% url 'about'%}" class="nav-link" >About Us</a></li>
+			<li {% if request.path == contacts %} class="" {%endif%} class="nav-item"><a href="{% url 'contact'%}" class="nav-link">Contacts<!-- <br><i class="fa fa-phone" aria-hidden="true"></i> --></a></li>
+			{% if user.is_authenticated %}
+
+			<li class="nav-item">
+				<a href="{% url 'registered-course'%}" class="nav-link">Registered-Course</a></li>
+			<li class="nav-item">
+				<a href="{% url 'registercourse'%}" class="nav-link">Register-Course</a></li>
+			<li {% if request.path == tutors %} class="active" {%endif%} class="nav-item">
+				<a href="{% url 'tutors'%}" class="nav-link">Tutors<!-- <br><i class="fa fa-male" aria-hidden="true"></i> --></a></li>
+
+			
+				{% if request.user.id is 1%}
+			<li class="nav-item">
+				<a href="{% url 'admin'%}" class="nav-link">Admin<br></a>
+			</li>
+				{% endif %}
+			
+			<li class="nav-item">
+				<a href="{% url 'logout'%}" class="nav-link">LOGOUT<br><!-- <i class="fa fa-road" aria-hidden="true"></i> --></a>
+			</li> 	
+			<li class="nav-item">
+				<a href="{% url 'password_change'%}" class="nav-link">Change Password<br><!-- <i class="fa fa-road" aria-hidden="true"></i> --></a>
+			</li> 		
+						<p class="">{{request.user.username}}</p>
+			{% else %}
+			<li class="nav-item">
+				<a href="{% url 'register'%}" class="nav-link">Register</a></li>	
+			<li class="nav-item">
+				<a href="{% url 'login'%}" class="nav-link">Login</a>
+			</li> 		
+			
+
+			{% endif %}
+
+</ul>
+</div>
+</div>
+</nav>
+
+

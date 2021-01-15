@@ -1,0 +1,395 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+
+<title>Olaprep</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static '/css/animate.css' %}">
+<link rel="stylesheet" href="{% static '/css/owl.carousel.min.css'%}">
+<link rel="stylesheet" href="{% static '/css/owl.theme.default.min.css'%}">
+<link rel="stylesheet" href="{% static '/css/magnific-popup.css'%}">
+<link rel="stylesheet" href="{% static '/css/bootstrap-datepicker.css'%}">
+<link rel="stylesheet" href="{% static '/css/jquery.timepicker.css'%}">
+<link rel="stylesheet" href="{% static '/css/flaticon.css'%}">
+<link rel="stylesheet" href="{% static '/css/style.css'%}">
+</head>
+<body>
+<!-- {% include 'snippets/_alert.html' %} -->
+<!-- END nav -->
+<div class="hero-wrap" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+<div class="col-md-7 ftco-animate">
+	<p>scarface</p>
+<span class="subheading">Welcome to StudyLab</span>
+<h1 class="mb-4">We Are Online Platform For Make Learn</h1>
+<p class="caps">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+<p class="mb-0"><a href="#" class="btn btn-primary">Our Course</a> <a href="#" class="btn btn-white">Learn More</a></p>
+</div>
+</div>
+</div>
+</div>
+ {% if not user.is_authenticated %}
+<section class="ftco-section ftco-animate ftco-no-pb ftco-no-pt ">
+<div class="container">
+<div class="row">
+<div class="col-md-7"></div>
+<div class="col-md-5 order-md-last">
+<div class="login-wrap p-4 p-md-5">
+<h3 class="mb-4">Register Now</h3>
+<form role="form" class="form-group ftco-animate form-inline" method="post" action="/profile/register/">{% csrf_token %}
+        
+            <div class="">
+                <span class="input-group-addon" style="background-color:#b77b48; color:white"><span class="glyphicon glyphicon-user"></span></span>
+                
+                 <input class="ftco-animate form-control-lg mb-4 border-dark fadeInUp ftco-animated" id="email" maxlength="30" name="email" placeholder="Email" type="email"><br>     
+            </div>
+        
+            <div class="">
+                <span class="input-group-addon" style="background-color:#b77b48; color:white"><span class="glyphicon glyphicon-user"></span></span>
+                
+                <input class="ftco-animate form-control-lg mb-4 border-dark fadeInUp ftco-animated" id="username" maxlength="30" name="username" placeholder="Username" type="text"><br>   
+            </div>
+        
+            <div class="">
+                <span class="input-group-addon" style="background-color:#b77b48; color:white"><span class="glyphicon glyphicon-user"></span></span>
+                <input class="ftco-animate form-control-lg mb-4 border-dark fadeInUp ftco-animated" id="password1" maxlength="30" name="password1" placeholder="Password" type="password"><br>  
+            </div>
+        
+            <div class="">
+                <span class="input-group-addon" style="background-color:#b77b48; color:white"><span class="glyphicon glyphicon-user"></span></span>
+                <input class="ftco-animate form-control-lg mb-4 border-dark fadeInUp ftco-animated" id="password2" maxlength="30" name="password2" placeholder="Repeat password" type="password"><br>
+            </div>
+        
+        <input type="submit" class="ftco-animate btn btn-primary px-5 mb-5 fadeInUp ftco-animated" value="Submit">
+        <p class="text-center">Already have an account? <a href="{% url 'login'%}">Sign In</a></p>
+
+        <input type="hidden" name="next" value="">
+    </div>
+                 {% if field.errors%}
+                 {{ field.errors }}
+                 {% endif %}
+</form>
+</div>
+</div>
+</div>
+</div>
+{% else %}
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+<div class="container">
+<div class="row">
+<div class="col-md-7"></div>
+<div class="col-md-5 order-md-last">
+<div class="login-wrap p-4 p-md-5">
+	<h1 class="h2">Welcome To Olaprep</h1>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+{% endif %}
+<section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center pb-4">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<span class="subheading">Start Learning Today</span>
+<h2 class="mb-4">Browse Online Course Category</h2>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/work-1.jpg'%});">
+<div class="text w-100 text-center">
+<h3>IT &amp; Software</h3>
+<span>100 course</span>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/work-9.jpg' %});">
+<div class="text w-100 text-center">
+<h3>Music</h3>
+<span>120 course</span>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/work-3.jpg'%}');">
+<div class="text w-100 text-center">
+<h3>Photography</h3>
+<span>40 course</span>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/work-5.jpg'%}');">
+<div class="text w-100 text-center">
+<h3>Marketing</h3>
+<span>10 course</span>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/work-8.jpg'%}');">
+<div class="text w-100 text-center">
+<h3>Health</h3>
+<span>131 course</span>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-lg-2">
+<a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/work-6.jpg'%}');">
+<span class="text w-100 text-center">
+<h3>Audio Video</h3>
+<span>100 course</span>
+</span>
+</a>
+</div>
+<div class="col-md-12 text-center mt-5">
+<a href="{% url 'subjects'%}" class="btn btn-secondary">See All Courses</a>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section bg-light">
+<div class="container">
+<div class="row justify-content-center pb-4">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<span class="subheading">Start Learning Today</span>
+<h2 class="mb-4">Courses We Offer</h2>
+</div>
+</div>
+<div class="row">
+	{% for obj in programs %}
+	<div class="col-md-4 ftco-animate">
+		<div class="project-wrap">
+				{% if obj.id is 1%}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/work-6.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 2 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/work-3.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 3 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/work-2.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 4 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/work-4.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 5 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/work-10.webp'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 6 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/game.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 7 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/robotics.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% elif obj.id is 8 %}
+				<a href="{% url 'registercourse'%}" class="img" style="background-image: url('{% static 'images/ai.jpg'%}');">
+				<span class="price">{{obj.program}}</span>
+				</a>
+				{% endif %}
+				<div class="text p-4">
+				<h3><a href="{% url 'subjects'%}">{{obj.text}}</a></h3>
+				<p class="advisor">Advisor <span>{{obj.author}}</span></p>
+				<ul class="d-flex justify-content-between">
+				<li><span class="flaticon-shower"></span>Students: 2300</li>
+				<li class="price">${{obj.price}}</li>
+				</ul>
+				</div>
+		</div>
+	</div>
+	{% endfor %}
+
+	
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url('{% static 'images/bg_4.jpg'%}');">
+<div class="overlay"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-online"></span></div>
+<div class="text">
+<strong class="number" data-number="{{oo}}">0</strong>
+<span>Online Courses</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-graduated"></span></div>
+<div class="text">
+<strong class="number" data-number="{{ee}}">0</strong>
+<span>Students Enrolled</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-instructor"></span></div>
+<div class="text">
+<strong class="number" data-number="{{aa}}">0</strong>
+<span>Experts Instructors</span>
+</div>
+</div>
+</div>
+<div class="col-md-3 d-flex justify-content-center counter-wrap animate">
+<div class="block-18 d-flex align-items-center">
+<div class="icon"><span class="flaticon-tools"></span></div>
+<div class="text">
+<strong class="number" data-number="0">0</strong>
+<span>Hours Content</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="ftco-intro ftco-section ftco-no-pb">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-12 text-center">
+<div class="img" style="background-image: url({% static 'images/bg_4.jpg'%});">
+<div class="overlay"></div>
+<h2>We Are OlaPrep An Online Learning Center</h2>
+<p>We can manage your dream and make them come true</p>
+<p class="mb-0"><a href="{% url 'registercourse'%}" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section services-section">
+<div class="container">
+<div class="row d-flex">
+<div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+<div class="w-100 mb-4 mb-md-0">
+<span class="subheading">Welcome to OlaPrep</span>
+<h2 class="mb-4">We Are OlaPrep An Online Learning Center</h2>
+<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+<div class="d-flex video-image align-items-center mt-md-4">
+	    <video width='400' controls class="video img d-flex align-items-center justify-content-center">
+		<source src='{{ MEDIA_URL }}/videos/Top 10 Reasons to Learn Python _ Python Programming _ Python Tutorial _ Python T.mp4' type='video/mp4'>
+		Your browser does not support the video tag.<span class="fa fa-play-circle"></span>
+		</video>
+		
+		<br><br>
+
+<h4 class="ml-4">Learn anything from OlaPrep, Example see reasons why you should learn python Watch video</h4>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+<div class="services">
+<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tools"></span></div>
+<div class="media-body">
+<h3 class="heading mb-3">Top Quality Content</h3>
+<p>A small river named Duden flows by their place and supplies</p>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+<div class="services">
+<div class="icon icon-2 d-flex align-items-center justify-content-center"><span class="flaticon-instructor"></span></div>
+<div class="media-body">
+<h3 class="heading mb-3">Highly Skilled Instructor</h3>
+<p>A small river named Duden flows by their place and supplies</p>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+<div class="services">
+<div class="icon icon-3 d-flex align-items-center justify-content-center"><span class="flaticon-quiz"></span></div>
+<div class="media-body">
+<h3 class="heading mb-3">World Class &amp; Quiz</h3>
+<p>A small river named Duden flows by their place and supplies</p>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+<div class="services">
+<div class="icon icon-4 d-flex align-items-center justify-content-center"><span class="flaticon-browser"></span></div>
+<div class="media-body">
+<h3 class="heading mb-3">Get Certified</h3>
+<p>A small river named Duden flows by their place and supplies</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<script src="{% static '/js/jquery.min.js'%}"></script>
+<script src="{% static '/js/jquery-migrate-3.0.1.min.js'%}"></script>
+<script src="{% static '/js/popper.min.js'%}"></script>
+<script src="{% static '/js/bootstrap.min.js'%}"></script>
+<script src="{% static '/js/jquery.easing.1.3.js'%}"></script>
+<script src="{% static '/js/jquery.waypoints.min.js'%}"></script>
+<script src="{% static '/js/jquery.stellar.min.js'%}"></script>
+<script src="{% static '/js/owl.carousel.min.js'%}"></script>
+<script src="{% static '/js/jquery.magnific-popup.min.js'%}"></script>
+<script src="{% static '/js/jquery.animateNumber.min.js'%}"></script>
+<script src="{% static '/js/bootstrap-datepicker.js'%}"></script>
+<script src="{% static '/js/scrollax.min.js'%}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script src="{% static '/js/google-map.js'%}"></script>
+<script src="{% static '/js/main.js'%}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-23581568-13');</script>
+</body>
+</html>
+
+
+		{% endblock %}
+
+
+		navs deleted
+<li {% if request.path == subjects %} class="active" {%endif%} class="nav-item">
+				<a href="{% url 'subjects'%}" class="nav-link">Subjects<!-- <br><i class="fa fa-book" aria-hidden="true"></i> --></a></li>
+<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How It Works<!-- <br> <i class="fa fa-tag" aria-hidden="true"></i> --></a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">How to register as a user</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">Hoow to roll for a course</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">How to go about the lectures</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">how and where to ask your questions</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">How to directly come in contact with olaprep</a>
+
+				</div>
+			</li>
+	

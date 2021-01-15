@@ -1,0 +1,551 @@
+[
+{
+    "model": "programs.program",
+    "pk": 1,
+    "fields": {
+        "Title": "Web-Development"
+    }
+},
+{
+    "model": "programs.program",
+    "pk": 2,
+    "fields": {
+        "Title": "Mobile-app-Development"
+    }
+},
+{
+    "model": "programs.program",
+    "pk": 3,
+    "fields": {
+        "Title": "Front-end-Frameworks"
+    }
+},
+{
+    "model": "programs.program",
+    "pk": 4,
+    "fields": {
+        "Title": "Package-Managers"
+    }
+},
+{
+    "model": "programs.program",
+    "pk": 5,
+    "fields": {
+        "Title": "Web-Design-and-Prototype"
+    }
+},
+{
+    "model": "programs.program",
+    "pk": 6,
+    "fields": {
+        "Title": "Game-Development"
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 1,
+    "fields": {
+        "course": "Django",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 2,
+    "fields": {
+        "course": "Ruby",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 3,
+    "fields": {
+        "course": "Angular",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 4,
+    "fields": {
+        "course": "React-Js",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 5,
+    "fields": {
+        "course": "Vue-Js",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 6,
+    "fields": {
+        "course": "Meter-Js",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 7,
+    "fields": {
+        "course": "ASP-NET",
+        "program": 1
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 8,
+    "fields": {
+        "course": "Bootstrap",
+        "program": 3
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 9,
+    "fields": {
+        "course": "Semantic-UI",
+        "program": 3
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 10,
+    "fields": {
+        "course": "Foundation",
+        "program": 3
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 11,
+    "fields": {
+        "course": "Materialize",
+        "program": 3
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 12,
+    "fields": {
+        "course": "Material-UI",
+        "program": 3
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 13,
+    "fields": {
+        "course": "Yarn",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 14,
+    "fields": {
+        "course": "NPM",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 15,
+    "fields": {
+        "course": "Git-Clients",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 16,
+    "fields": {
+        "course": "Github-desktop",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 17,
+    "fields": {
+        "course": "Source-Tree",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 18,
+    "fields": {
+        "course": "Git-Cola",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 19,
+    "fields": {
+        "course": "Smart-Git",
+        "program": 4
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 20,
+    "fields": {
+        "course": "Frigma",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 21,
+    "fields": {
+        "course": "Protopie",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 22,
+    "fields": {
+        "course": "Framer",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 23,
+    "fields": {
+        "course": "Toolset",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 24,
+    "fields": {
+        "course": "Animator",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 25,
+    "fields": {
+        "course": "Affinity-Desgner",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 26,
+    "fields": {
+        "course": "Mock-Plus",
+        "program": 5
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 27,
+    "fields": {
+        "course": "Build-fire.Js",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 28,
+    "fields": {
+        "course": "Framework7",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 29,
+    "fields": {
+        "course": "Ionic",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 30,
+    "fields": {
+        "course": "Jquery.Mobile",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 31,
+    "fields": {
+        "course": "Xojo",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 32,
+    "fields": {
+        "course": "Corona.Tabs",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 33,
+    "fields": {
+        "course": "Flutter",
+        "program": 2
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 34,
+    "fields": {
+        "course": "Construct2",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 35,
+    "fields": {
+        "course": "Game-Maker",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 36,
+    "fields": {
+        "course": "Unity",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 37,
+    "fields": {
+        "course": "Click-team-Fusion",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 38,
+    "fields": {
+        "course": "Game-salad",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 39,
+    "fields": {
+        "course": "Stencyl",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 40,
+    "fields": {
+        "course": "Game-front",
+        "program": 6
+    }
+},
+{
+    "model": "programs.class",
+    "pk": 41,
+    "fields": {
+        "course": "Sploder",
+        "program": 6
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 1,
+    "fields": {
+        "name": "Mr.Agbo Samuel",
+        "sex": "Male",
+        "qualification": "B.Sc, Masters",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 2,
+    "fields": {
+        "name": "Mr.Agbo Scar",
+        "sex": "Ma",
+        "qualification": "B.Sc",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 3,
+    "fields": {
+        "name": "Mrs.Agbo ozioma",
+        "sex": "Female",
+        "qualification": "B.Sc",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 4,
+    "fields": {
+        "name": "Mr Agbo Scarface",
+        "sex": "Male",
+        "qualification": "B.Sc",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 5,
+    "fields": {
+        "name": "Mr Chinaza Agbo",
+        "sex": "Male",
+        "qualification": "B.Sc",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.instructors",
+    "pk": 6,
+    "fields": {
+        "name": "Mr Agbo ThankGod",
+        "sex": "Male",
+        "qualification": "B.Sc",
+        "phone_no": 7085427519
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 1,
+    "fields": {
+        "program": 1,
+        "author": 1,
+        "price": 100,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...\r\n>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Web-Development",
+        "course_outline": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 2,
+    "fields": {
+        "program": 3,
+        "author": 2,
+        "price": 200,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...\r\n>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Front-end-Frameworks",
+        "course_outline": [
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 3,
+    "fields": {
+        "program": 4,
+        "author": 3,
+        "price": 300,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...\r\n>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Package-Managers",
+        "course_outline": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ]
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 4,
+    "fields": {
+        "program": 5,
+        "author": 4,
+        "price": 250,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...\r\n>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Web-Design-and-Prototype",
+        "course_outline": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+        ]
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 5,
+    "fields": {
+        "program": 2,
+        "author": 5,
+        "price": 259,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Mobile-app-Development",
+        "course_outline": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+        ]
+    }
+},
+{
+    "model": "programs.programs",
+    "pk": 6,
+    "fields": {
+        "program": 6,
+        "author": 6,
+        "price": 164,
+        "text": ">Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...\r\n>Our comprehensive online maths tutoring programme covers the British National Curriculum from Year 1 to Year 12 and is suitable for children of all abilities. Whether your child...",
+        "slug": "Game-Development",
+        "course_outline": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+        ]
+    }
+}
+]

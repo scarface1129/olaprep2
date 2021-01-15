@@ -1,0 +1,108 @@
+[
+{
+    "model": "Profile.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$ajyG77uVIrY9$1HOcIk/Rhj2kKu20vaVyjLqrTMRzXtwEarH8bP8sbVI=",
+        "last_login": "2020-11-07T13:12:34.625Z",
+        "is_superuser": false,
+        "email": "scarface@gmail.com",
+        "is_active": true,
+        "admin": true,
+        "staff": true,
+        "username": "",
+        "activation_key": null,
+        "activated": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "Profile.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$u8RKX9Pacsyn$75twxUTmHVTRummR3rQmF7wRq9jQHnDpCEsiP7apFFI=",
+        "last_login": "2020-11-06T00:26:50.102Z",
+        "is_superuser": false,
+        "email": "emmanuel@gmail.com",
+        "is_active": true,
+        "admin": false,
+        "staff": false,
+        "username": "daniel",
+        "activation_key": null,
+        "activated": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "Profile.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$iJK7hqE0Lmx8$9HkwvLeufRDFfaq+VNbexcP004CYJEynogMwwpGVKAE=",
+        "last_login": "2020-11-07T13:22:33.475Z",
+        "is_superuser": false,
+        "email": "Alexander@gmail.com",
+        "is_active": true,
+        "admin": false,
+        "staff": false,
+        "username": "Alex",
+        "activation_key": null,
+        "activated": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "Profile.customuser",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$3p0l2t3qVaui$3nGKCobmMfxnDssKwAAerfQ74vs7vQGyG/Mgr4PaWJo=",
+        "last_login": "2020-11-06T00:24:27.021Z",
+        "is_superuser": false,
+        "email": "chidimma@gmail.com",
+        "is_active": true,
+        "admin": false,
+        "staff": false,
+        "username": "chidimma",
+        "activation_key": null,
+        "activated": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "Profile.profile",
+    "pk": 1,
+    "fields": {
+        "owner": 1,
+        "registered_Course": []
+    }
+},
+{
+    "model": "Profile.profile",
+    "pk": 3,
+    "fields": {
+        "owner": 3,
+        "registered_Course": []
+    }
+},
+{
+    "model": "Profile.profile",
+    "pk": 4,
+    "fields": {
+        "owner": 4,
+        "registered_Course": [
+            1
+        ]
+    }
+},
+{
+    "model": "Profile.profile",
+    "pk": 5,
+    "fields": {
+        "owner": 5,
+        "registered_Course": []
+    }
+}
+]
